@@ -1,0 +1,40 @@
+#load{
+     color:hsl(60, 100%, 50%);
+    height:160px;
+    width:160px;
+    margin-top: 240px;
+    margin-left: 600px;
+    border-radius: 50%;
+    border-style:dashed;
+    border: 20px solid red;
+    border-top: 20px solid orange;
+    border-style:double;
+    justify-items: center;
+    align-content: center;
+    display:inline-block;
+    background-color: blue;
+    transition: all 5s ease-in-out 0s;
+        animation-timing-function: linear;
+    animation: load 37s cubic-bezier(0.5, 0.25, 0.75, 0.5) 1s infinite normal;
+}   
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: scale(3) rotate(180deg);
+    }
+    99.999999999999%{
+        transform:rotate(360deg) scale(0.005) skew(1deg);
+    }
+    100%{
+            /* animation:ad 10000s ease-in-out 0s infinite normal; */
+        transform:rotate(0) scale(0.005) skew(90deg);
+    } 
+}
+#load:hover{
+ background-color: red;
+ color:white;
+ font-size: 50px;
+ border-radius: 0%;
+}
